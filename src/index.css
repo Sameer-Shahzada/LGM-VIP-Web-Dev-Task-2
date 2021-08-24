@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.loader {
+  margin: 0 auto;
+  display: block;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#main .cards{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background: linear-gradient( #30cfd0 0%, #330867 100%);
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+#main .cards .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 100000;
+  overflow: hidden;
+  border-radius: 20px;
+  transform-origin: top;
+  border: 8px groove darkcyan;
+  border-radius: 20px;
+}
+#main .cards:hover .imgBx{
+  transform: translateY(30px) scale(0.5);
+  border: none;
+}
+#main .cards .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main .cards .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#main .cards .content .details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#main .cards .content .details h2{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#main .cards .content .details{
+  color: #fff;
+}
+.user-id{
+  font-style: oblique;
+  margin-bottom: 6px;
+  padding: 4px 15px;
+  border-radius: 4px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.2),
+              5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.user-id:hover{
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.2),
+              5px 5px 15px rgba(0, 0, 0, 0.1),
+              inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+              inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: goldenrod;
+  font-weight: 700;
+}
+.user-name:hover{
+  color:  #30cfd0 !important;
+  cursor: pointer;
+}
+.user-email:hover{
+  cursor: pointer;
+  text-shadow: 0 0 10px #c90606,
+  0 0 20px #f01a0b,
+  0 0 40px #f5150d,
+  0 0 80px #fd0f0f,
+  0 0 160px #db0808;
+  color:darkgrey;
+}
+@media (max-width: 360px){
+  .nav-pad .container{
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+}
+@media (max-width:700px) {
+  .container
+  {
+    flex-direction: column;
+  }
+  #btnBox{
+    align-content: center;
+    margin-bottom:10px;
+  
+  }
+  button {
+   
+    margin: 0 55px;
+  }
+  
+}
