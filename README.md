@@ -1,6 +1,6 @@
 # LGM-VIP-Web-Dev-Task-2
 
--[Visit React App](https://objective-yalow-d205c6.netlify.app/)
+- [Visit React App](https://objective-yalow-d205c6.netlify.app/)
 
 
 
